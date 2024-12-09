@@ -58,7 +58,7 @@ LanguageBreak：[GitHub 发布页](https://github.com/notmarek/LanguageBreak/rel
    - 双指轻点一下屏幕右下角，紧接着单指按下从右向左水平滑动一段距离（如下图所示）。
    - 双指同时点按住屏幕右下角，随后右边手指抬起，紧接着左边手指向左水平滑动一段距离。
    - 双指同时点按住屏幕右下角，直接向左滑动一段距离。
-![image](https://github.com/user-attachments/assets/c4398ac2-e8c3-426d-962e-098b3c325026)
+
 注意，在之后的操作中，只要出现带有“展示机无内容或未连接网络（This demonstration device is either missing content or is disconnected from the network）”、“配置设备（CONFIGURE DEVICE）”字样的界面，都同样需要用这里介绍的秘密手势跳过才能继续操作。
 如果在进行以上步骤的过程中弹出了“Collecting Debug Info”提示框，说明你正在以错误的方式重试越狱步骤，请参考“常见问题”所提供的方法重置 Kindle 后再重新操作。
 
