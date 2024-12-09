@@ -58,6 +58,8 @@ LanguageBreak：[GitHub 发布页](https://github.com/notmarek/LanguageBreak/rel
    - 双指轻点一下屏幕右下角，紧接着单指按下从右向左水平滑动一段距离（如下图所示）。
    - 双指同时点按住屏幕右下角，随后右边手指抬起，紧接着左边手指向左水平滑动一段距离。
    - 双指同时点按住屏幕右下角，直接向左滑动一段距离。
+kindle-jailbreak-secret-gesture
+![操作手势](kindle-jailbreak-secret-gesture.gif "操作手势")
 
 注意，在之后的操作中，只要出现带有“展示机无内容或未连接网络（This demonstration device is either missing content or is disconnected from the network）”、“配置设备（CONFIGURE DEVICE）”字样的界面，都同样需要用这里介绍的秘密手势跳过才能继续操作。
 如果在进行以上步骤的过程中弹出了“Collecting Debug Info”提示框，说明你正在以错误的方式重试越狱步骤，请参考“常见问题”所提供的方法重置 Kindle 后再重新操作。
@@ -79,7 +81,7 @@ LanguageBreak：[GitHub 发布页](https://github.com/notmarek/LanguageBreak/rel
 8. 弹出并断开 USB 设备，按示意图所示，按下 Kindle 按钮重启 Kindle 设备；
 9. 正常情况下，重启后会出现语言选择界面，依次点击【简体中文 → 下一步】；
 10. Kindle 屏幕应会出现越狱相关的日志信息（如下图所示），重启后进行下一步。
-![image](https://github.com/user-attachments/assets/3dc397c3-c803-430e-bf65-5600909f483f)
+
 11. [若进入演示模式] 上一步完成后，Kindle 会自动重启并进入正常模式，但是如果重启后仍然会进入演示模式：
     - 在 Kindle 界面上方的搜索框中输入 ```;uzb``` 并按回车激活演示模式的 USB 传输功能；
     - 用 USB 数据线将 Kindle 连电脑，将与你当前 Kindle 界面语言相对应的热修复补丁文件 update_hotfix_languagebreak-xx-XX.bin（如美式英语 en-US）拷贝到 Kindle 根目录；
