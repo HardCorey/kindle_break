@@ -2,6 +2,23 @@
 记录 Kindle 越狱和资料，大部分内容来源于网页：[bookfere](https://bookfere.com/post/1075.html)，请参考原网页获取最新信息，这里只做备份，防止原网页失联。  
 使用的 Kindle 为 2015 年款 kpw3，固件版本为 5.16.2.1.1，亲测可行。
 
+## 目录
+  - [先决条件](#----)
+  - [准备工作](#----)
+  - [下载软件](#----)
+  - [越狱步骤](#----)
+    + [1. 进入演示模式](#1-------)
+    + [2. 选择语言越狱](#2-------)
+  - [如何正确的重置 Kindle](#--------kindle)
+  - [插件安装](#----)
+    + [MobileRead Package Installer (MRPI) — 插件安装器](#mobileread-package-installer--mrpi---------)
+    + [KUAL — 插件程序启动器](#kual----------)
+    + [Koreader — 第三方电子书阅读器](#koreader------------)
+    + [Koreader 字体](#koreader---)
+    + [Koreader 词典](#koreader---)
+    + [Kindle 词典](#kindle---)
+
+
 ## 先决条件
 Kindle 固件版本小于等于 5.16.2.1.1。如果你的 Kindle 固件版本小于此版本，建议先升级到 5.16.2.1.1，以增加成功越狱的概率。
 
