@@ -58,11 +58,10 @@ LanguageBreak：[GitHub 发布页](https://github.com/notmarek/LanguageBreak/rel
    - 双指轻点一下屏幕右下角，紧接着单指按下从右向左水平滑动一段距离（如下图所示）。
    - 双指同时点按住屏幕右下角，随后右边手指抬起，紧接着左边手指向左水平滑动一段距离。
    - 双指同时点按住屏幕右下角，直接向左滑动一段距离。
-kindle-jailbreak-secret-gesture
 ![操作手势](kindle-jailbreak-secret-gesture.gif "操作手势")
 
-注意，在之后的操作中，只要出现带有“展示机无内容或未连接网络（This demonstration device is either missing content or is disconnected from the network）”、“配置设备（CONFIGURE DEVICE）”字样的界面，都同样需要用这里介绍的秘密手势跳过才能继续操作。
-如果在进行以上步骤的过程中弹出了“Collecting Debug Info”提示框，说明你正在以错误的方式重试越狱步骤，请参考“常见问题”所提供的方法重置 Kindle 后再重新操作。
+注意，在之后的操作中，只要出现带有“展示机无内容或未连接网络（This demonstration device is either missing content or is disconnected from the network）”、“配置设备（CONFIGURE DEVICE）”字样的界面，都同样需要用这里介绍的秘密手势跳过才能继续操作。  
+如果在进行以上步骤的过程中弹出了“Collecting Debug Info”提示框，说明你正在以错误的方式重试越狱步骤，请参考【如何正确的重置 Kindle】部分所提供的方法重置 Kindle 后再重新操作。
 
 ### 2. 选择语言越狱
 1. 点击 Kindle 界面上方的搜索框输入 ```;demo``` 按回车进入“演示菜单”界面；
@@ -81,7 +80,7 @@ kindle-jailbreak-secret-gesture
 8. 弹出并断开 USB 设备，按示意图所示，按下 Kindle 按钮重启 Kindle 设备；
 9. 正常情况下，重启后会出现语言选择界面，依次点击【简体中文 → 下一步】；
 10. Kindle 屏幕应会出现越狱相关的日志信息（如下图所示），重启后进行下一步。
-
+    ![越狱信息](kindle-jailbreak-information.png "越狱信息")
 11. [若进入演示模式] 上一步完成后，Kindle 会自动重启并进入正常模式，但是如果重启后仍然会进入演示模式：
     - 在 Kindle 界面上方的搜索框中输入 ```;uzb``` 并按回车激活演示模式的 USB 传输功能；
     - 用 USB 数据线将 Kindle 连电脑，将与你当前 Kindle 界面语言相对应的热修复补丁文件 update_hotfix_languagebreak-xx-XX.bin（如美式英语 en-US）拷贝到 Kindle 根目录；
@@ -91,5 +90,68 @@ kindle-jailbreak-secret-gesture
     - 将与你当前 Kindle 界面语言相对应的热修复补丁文件 update_hotfix_languagebreak-xx-XX.bin 拷贝到 Kindle 根目录；
     - 依次点击菜单【设置 → 更新您的 Kindle】安装热修复补丁；
     - 重启后全部越狱步骤完毕。
-14. [异常排查] 如果某些功能（如 WiFi、蓝牙）无法使用，可在搜索框中输入 ```;demo``` 并按回车进入激活演示模式界面，然后点击右边的【Yes】按钮，这样 Kindle 会自动重启并重置 Kindle 并进入正常模式。最后重新安装一遍 update_hotfix_languagebreak-xx-XX.bin 即可。
-15. 验证：如果想要简单验证越狱是否成功，可以在 Kindle 界面上方的搜索框中输入 ;log runme 并按回车，如果屏幕左上角出现了 No user script found. 的字样就说明没有问题。
+13. [异常排查] 如果某些功能（如 WiFi、蓝牙）无法使用，可在搜索框中输入 ```;demo``` 并按回车进入激活演示模式界面，然后点击右边的【Yes】按钮，这样 Kindle 会自动重启并重置 Kindle 并进入正常模式。最后重新安装一遍 update_hotfix_languagebreak-xx-XX.bin 即可。
+14. 验证：在 Kindle 界面上方的搜索框中输入 ```;log runme``` 并按回车，如果屏幕左上角出现了 ```No user script found.``` 的字样就说明没有问题。
+
+## 如何正确的重置 Kindle
+不论是想要放弃越狱、越狱成功后想要解除越狱，还是越狱失败后想要从头开始越狱步骤，都必须先重置一遍 Kindle 设备，再安装一遍同版本号 Kindle 固件文件（方法同普通固件）。  
+1. 重置 Kindle 存在两种情况：
+   - 如果 Kindle 已退出演示模式，可直接通过击菜单【设置 → 设备选项 → 重置】进行重置。
+   - 如果 Kindle 尚处于演示模式，可在 Kindle 界面上方的搜索框中输入 ```;demo``` 并回车进入“演示菜单”（如无法调出菜单重启 Kindle 后重试），点击【导入内容】按钮，用 USB 数据线将 Kindle 连电脑，在根目录中放入名为 ```DO_FACTORY_RESTORE``` 的空文件（注意！是文件，不是文件夹，不带扩展名），最后重启 Kindle 即可自动重置。
+2. 重置完成后，安装同版本号的固件：
+   - 下载最新固件文件（[亚马逊官方页面下载](https://www.amazon.com/gp/help/customer/display.html?nodeId=GKMQC26VQQMM8XSW)）；
+   - 通过 USB 连接电脑，将下载好的固件文件拷贝到“根目录”下（和 documents 文件夹同级）；
+   - 拷贝完毕后安全移除或弹出驱动器，并断开 Kindle 和电脑的 USB 连接；
+   - 进入 Kindle 界面，依次点击【 菜单（屏幕右上角）→ 设置 → 菜单（屏幕右上角）→ 更新您的 Kindle】（英文版为【menu → settings → menu → update】）；
+   - 接下来 Kindle 会自动进入固件更新状态，屏幕上会显示“您的 Kindle 正在更新”的提，更新完毕会自动重启，重启完毕固件就更新成功了。
+
+## 插件安装
+### MobileRead Package Installer (MRPI) — 插件安装器
+MobileRead Package Installer 是一款 KUAL 插件。因为现在 Kindle 固件不支持直接把插件文件以刷入 bin 的方式安装，所以需要通过 KUAL 的这个插件 MRPI 来安装。  
+[下载地址](https://www.mobileread.com/forums/showthread.php?t=225030)
+安装步骤：
+  - 用 USB 数据线将 Kindle 连接到电脑上，直到出现 Kindle 磁盘；
+  - 解压缩下载到的 kual-mrinstaller-1.7.N-xxx.tar.xz 得到一个文件夹；
+  - 把文件夹内的 extensions 和 mrpackages 拷贝到 Kindle 的根目录。
+如果根目录已有 extensions 这个文件夹，可以只把解压得到的 extensions 文件夹中的内容拷贝到 Kindle 根目录原有的 extensions 文件夹内，以避免原文件夹内的其它文件被删除。  
+另外，值得一提的是，如果你需要安装多个插件（比如本文之后所介绍的那些插件），不必重复每一款插件的安装步骤，只需要将所有 bin 文件拷贝到 mrpackage 目录，然后通过 ;log mrpi 命令一次性安装它们。这样，每当需要重新安装插件时，可以节省大量时间。  
+### KUAL — 插件程序启动器
+KUAL (即 Kindle Unified Application Launcher)，是一款插件启动器。安装 KUAL 之后，你可以下载或自己编写插件并通过 KUAL 启动。比如用来启动 Koreader 之类的插件程序、让电量显示百分比等。
+- KO 1/2/3、KPW 4/5、Kindle 8/10 按照以下步骤安装 KUAL：
+   - 下载 coplate 版本 KUAL：[官方页面](https://www.mobileread.com/forums/showthread.php?t=225030)
+   - 用 USB 数据线将 Kindle 连接到电脑上，直到出现 Kindle 磁盘；
+   - 先按照第一部分提供的方法安装 MobileRead Package Installer (MRPI)；
+   - 然后解压缩下载到的 KUAL-xxxxxxx-20xxxxxx.tar.xz 得到一个文件夹；
+   - 在文件夹中找到 Update_KUALBooklet_xxxxxxx_install.bin 文件，拷贝到 Kindle 根目录下的 mrpackages 文件夹，然后在 Kindle 搜索框中输入 ```;log mrpi``` 点击回车；
+   - 这时会调用 MRPI 安装 KUAL，安装完成并等待 Kindle 重启完毕后即可使用 KUAL。
+
+- Kindle 7、KPW 1/2/3、KV 按照以下步骤安装 KUAL：
+   - 下载 KUAL：[官方页面](https://www.mobileread.com/forums/showthread.php?t=225030)
+   - 固件版本大于 5.8.x 的安装步骤：
+      - 用 USB 数据线将 Kindle 连接到电脑上，直到出现 Kindle 磁盘；
+      - 先按照第一部分提供的方法安装 MobileRead Package Installer (MRPI)；
+      - 然后解压缩下载到的 KUAL-v2.x.xx-xxxxxxxx-20xxxxxx.tar.xz 得到一个文件夹；
+      - 在文件夹中找到 Update_KUALBooklet_v2.x.xx_install.bin 文件，拷贝到 Kindle 根目录下的 mrpackages 文件夹，然后在 Kindle 搜索框中输入 ```;log mrpi``` 点击回车；
+      - 这时会调用 mrpi 安装 KUAL，安装完成并等待 Kindle 重启完毕后即可使用 KUAL。
+   - 固件版本小于 5.8.x 的安装步骤：
+      - 用 USB 数据线将 Kindle 连接到电脑上，直到出现 Kindle 磁盘；
+      - 解压缩下载到的 KUAL-v2.x.xx-xxxxxxxx-20xxxxxx.tar.xz 得到一个文件夹；
+      - 在文件夹中找到 KUAL-KDK-2.0.azw2 拷贝到 Kindle 的 documents 文件夹中；
+      - 弹出 Kindle 磁盘并进入 Kindle 界面，即可看到 KUAL（如下图所示）。
+成功安装 KUAL 后，我的图书馆中会出现一个名为 KUAL 的个人文档图标，正常情况下，点开此图标应显示菜单。
+
+### Koreader — 第三方电子书阅读器
+Koreader 这款软件采用图像分割再重排的方式处理 PDF 文档（包括扫描和非扫描页面），这样不仅支持文字版 PDF 重排和数学公式的重排，还能对扫描版 PDF 和 DJVU 文档进行重新排版。重新排版后的文档，文字放大后可以适应屏幕自动换行，免去不断地左右拖动页面阅读。  
+下载 Koreader：[官方页面](https://github.com/koreader/koreader/releases)  
+安装步骤：
+   - 首先确保安装了 MRPI 和 KUAL；
+   - 用 USB 数据线将 Kindle 连接到电脑上，直到出现 Kindle 磁盘；
+   - 解压缩下载到的 Koreader 压缩包，可得到 extensions 和 koreader 两个文件夹；
+   - 先把文件夹 extensions 中的内容拷贝到 Kindle 根目录下的 extensions 文件夹中；
+   - 然后把文件夹内的 koreader 文件夹拷贝到 kindle 根目录下；
+   - 通过 KUAL 菜单中启动 Koreader 并用它的文件浏览器打开并阅读电子书。
+### Koreader 字体
+直接放在 Kindle 根目录的 fonts 目录下。
+### Koreader 词典
+Koreader 只支持星际译王　StarDict 词典，将包含三个文件文件 idx、ifo（或 ifo.gz） 、 dict（或 dict.dz）的目录复制到 Kindle 下面的 koreader/data/dict 目录下。
+### Kindle 词典
