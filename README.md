@@ -152,6 +152,9 @@ Koreader 这款软件采用图像分割再重排的方式处理 PDF 文档（包
    - 通过 KUAL 菜单中启动 Koreader 并用它的文件浏览器打开并阅读电子书。
 ### Koreader 字体
 直接放在 Kindle 根目录的 fonts 目录下，只支持 TTF 和 OTF 格式。
+见 releases【Kindle字体】部分。
 ### Koreader 词典
 Koreader 只支持星际译王　StarDict 词典，将包含三个文件文件 idx、ifo（或 ifo.gz） 、 dict（或 dict.dz）的目录复制到 Kindle 下面的 koreader/data/dict 目录下。
+常用的、注释比较全的英语和汉语词典见 releases【Koreader词典】部分。
 ### Kindle 词典
+见 releases【Kindle词典】部分。
