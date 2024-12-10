@@ -1,5 +1,5 @@
 # Kindle 越狱和常用软件安装
-记录 Kindle 越狱和资料，大部分内容来源于网页：[bookfere](https://bookfere.com/post/1075.html)，请参考原网页获取最新信息，这里只做备份，防止原网页失联。  
+记录 Kindle 越狱和资料，越狱部分来源于网页：[bookfere](https://bookfere.com/post/1075.html)，请参考原网页获取最新信息，这里只做备份，防止原网页失联。其他软件安装过程搜集自网上。  
 使用的 Kindle 为 2015 年款 kpw3，固件版本为 5.16.2.1.1，亲测可行。
 
 ## 先决条件
